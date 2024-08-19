@@ -1,0 +1,10 @@
+export { default as AverageTV } from "./AverageTV/averageTV";
+export { default as AverageTVDrilldown } from "./AverageTV/averageTVDrilldown";
+export { default as BathroomStats } from "./BathroomStatistics/bathroomStatistics";
+export { default as ExtraFridgeFreezer } from "./ExtraFridgeFreezer/extraFridgeFreezer";
+export { default as HouseholdAverage } from "./HouseholdAverage/householdAverage";
+export { default as LaundryCenter } from "./LaundryCenter/laundryCenter";
+export { default as Search } from "./Search/search";
+export { default as SearchResult } from "./Search/searchResult";
+export { default as Top25 } from "./Top25/top25";
+export { default as Drilldown } from "./Top25/drilldown";

@@ -1,0 +1,25 @@
+No error msg displayed on entering invalid email id(30332, 30332@g, 30332.com)
+Should we restrict postal code field to few digits? 
+Phone number accepts 2 digit area code and 8 digit number.  As per spoec, area code must be 3 , number has has to be 7 digits.
+Whether dash can be placed anywhere in the number field in phone number?
+For a phone number that exists already in the DB, error msg can be displayed appropriately. Right now it displays as invalid number.
+spec says that we can allow user to enter dashes in phone num, but should have dashes removed before inserting. Does it mean we should allow user to enter any number of dashes
+Square footage should be whole number, currently it accepts decimal without error(DB has sq footage in integer) but i think appropriate error msg must be thrown
+Households can have none bedrooms too. we cant set 0 as bedroom count
+with house type and alphanumeric square footage, goes to invalid page
+with no house type and alphanumeric square footage, no error msg,stays in same page
+Should we restrict name to few chars in half bathroom
+If the user opts to not enter ph number, navigation to next page fails
+'You must enter a display size error' is seen when size is 0, but 0.0 display size is accepted
+Should we restrict manufacturer name to few chars in model name
+Data is not cleared if user closes the screen by mistake while entering details
+Drill down report for individual manufacturer should have manufacturer name at the top
+Should the drilldown report for individual manufacturers have back button in case the user decided to see the report for all the manufacturers one by one. Though we can use back click at top, should we have a Back button(like in avg tv size report)
+Should we order the drilldown report for individual manufacturer in descending order as its not explicitly stated in spec.
+Back button in search results page?
+Screen size typo in avg tv display size (change to screen type)
+Am little confused by avg TV display size calculation. Right now its (total display size of all TVs in a state)/(total number of TVs in a state)
+Whether denominator is correct ? Denominator is number of households in the state or number of households in state that have TV or number of TVs in state? Should we confirm this with TA?
+Some states that are mapped to households are not listed (since they dont have TV). I think that all the states that are mapped to household must be listed (with avg size 0.0 for states with no TV)
+Tables with null rows are displayed in many reports if data is not present in DB. As per spec, appropriate msg should be displayed and no null page/empty table shud be presented in reports
+
